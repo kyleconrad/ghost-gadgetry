@@ -1,0 +1,112 @@
+/* POSTS */
+.single-post {
+	@include rem(padding-bottom,3rem);
+	@include rem(margin-bottom,3rem);
+	border-bottom: 1px solid darken(white,15%);
+
+	&:last-child,
+	&:last-of-type {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+	header {
+		@include rem(padding-bottom,1.25rem);
+	}
+
+	.post-footer {
+		border-top: 1px solid darken(white,10%);
+		@include rem(padding-top,1.25rem);
+		@include rem(margin-top,2rem);
+		text-align: left;
+	}
+
+	.author-text {
+		float: left;
+		width: 80%;
+		padding-right: 5%;
+
+		@include breakpoint(mobile) {
+			width: 100%;
+			float: none;
+			padding-right: 0;
+		}
+	}
+	.author-pic {
+		float: left;
+		width: 14%;
+		@include border-radius(100%);
+		@include rem(margin-right,1.5rem);
+		border: 3px solid lighten(black,20%);
+
+		@include breakpoint(mobile) {
+			width: 22%;
+			@include rem(margin-right,1rem);
+		}
+	}
+	.share-box {
+		float: right;
+
+		@include breakpoint(mobile) {
+			float: none;
+			width: 100%;
+			text-align: center;
+			@include rem(margin-top,1.5rem);
+			@include rem(margin-bottom,1.5rem);
+			background: darken(white,10%);
+			border: 1px solid rgba(black,0.1);
+			@include rem(padding,0.75rem 1rem 1.1rem);
+		}
+	}
+
+	#share-icons {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 0;
+		@include rem(padding-top,0.75rem);
+
+		@include breakpoint(mobile) {
+			text-align: center;
+			@include rem(padding-top,0.875rem);
+		}
+
+		li {
+			padding-left: 0;
+			display: inline-block;
+			margin-bottom: 0;
+			@include rem(margin-right,1.25rem);
+
+			&:last-child {
+				margin-right: 0;
+
+				@include breakpoint(mobile) {
+					@include rem(margin-right,1.25rem);
+				}
+			}
+
+			@include breakpoint(mobile) {
+				@include rem(margin-left,1.25rem);
+			}
+
+			a {
+				display: block;
+				color: lighten(black,10%);
+				text-decoration: none;
+				@include rem(font-size,1.1rem);
+				@include transition(color 0.15s);
+
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.post-page {
+	iframe,
+	.fluid-width-video-wrapper {
+		@include rem(margin-bottom,1.25rem);
+	}
+}

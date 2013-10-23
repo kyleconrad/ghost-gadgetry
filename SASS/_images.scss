@@ -1,0 +1,10 @@
+/* IMAGES */
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	.post-page & {
+		@include rem(margin-bottom,1.25rem);
+	}
+}
