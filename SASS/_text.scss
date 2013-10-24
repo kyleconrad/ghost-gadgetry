@@ -189,8 +189,8 @@ hr {
 	}
 }
 
-.left-page,
-.right-page {
+.newer-posts,
+.older-posts {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	@include rem(font-size,0.75rem);

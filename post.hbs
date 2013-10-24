@@ -1,0 +1,29 @@
+{{!< default}}
+  {{#post}}
+    <article class="single-post post-page">
+        <header>
+	<span class="post-info">By {{author.name}} on {{date published_at format="MMMM DD, YYYY"}}</span>
+	<h1>{{title}}</h1>
+        </header>
+
+	{{{content}}}
+
+            <div class="share-box">
+                <span class="share-text">Share Post</span>
+
+                <ul id="share-icons">
+                    <li>
+                        <a href="#" class="icon-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-googleplus"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</section>
+  {{/post}}
