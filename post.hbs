@@ -1,34 +1,35 @@
 {{!< default}}
   {{#post}}
     <article class="single-post post-page">
-        <header>
+      <header>
 	<span class="post-info">By {{author.name}} on {{date published_at format="MMMM DD, YYYY"}}</span>
 	<h1>{{title}}</h1>
-        </header>
+      </header>
 
-	{{{content}}}
+      {{{content}}}
 
-<div class="author-text">
-                <img class="author-pic" src="{{author.image}}">
-                <span class="author-name">{{author.name}}</span>
-                <span class="author-bio">{{author.bio}}</span>
-            </div>
-            <div class="share-box">
-                <span class="share-text">Share Post</span>
+      <div class='post-footer clearfix'>
+	<div class="author-text">
+	  <img class="author-pic" src="{{author.image}}">
+	  <span class="author-name">{{author.name}}</span>
+	  <span class="author-bio">{{author.bio}}</span>
+	</div>
+	<div class="share-box">
+	    <span class="share-text">Share Post</span>
 
-                <ul id="share-icons">
-                    <li>
-                        <a href="#" class="icon-twitter"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-facebook"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-googleplus"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+	    <ul id="share-icons">
+		<li>
+		    <a href="#" class="icon-twitter"></a>
+		</li>
+		<li>
+		    <a href="#" class="icon-facebook"></a>
+		</li>
+		<li>
+		    <a href="#" class="icon-googleplus"></a>
+		</li>
+	    </ul>
+	</div>
+      </div>
     </article>
-</section>
+  <!-- end of post -->
   {{/post}}
