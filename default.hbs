@@ -21,6 +21,12 @@
     <link rel="icon" href="fav32.png">
     <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
 
+    <meta property="og:image" content="{{@blog.url}}{{@blog.logo}}"/>
+    <meta property="og:title" content="{{@blog.title}}"/>
+    <meta property="og:url" content="{{url absolute='true'}}"/>
+    <meta property="og:site_name" content="{{@blog.title}}"/>
+
+
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="fav144.png">
 
@@ -29,7 +35,8 @@
     <script type="text/javascript" src="{{@blog.url}}/JS/headload.js"></script>
     <script>
         head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            .js("{{@blog.url}}/JS/fitvids.js");
+            .js("{{@blog.url}}/JS/fitvids.js")
+            .js("{{@blog.url}}/JS/scripts.js");
     </script>
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -45,7 +52,7 @@
 
 <section id="left-bar">
     <a href="{{@blog.url}}/">
-      <img src="{{@blog.logo}}">
+      <img class='js-blog-logo' src="{{@blog.logo}}">
     </a>
 
     <ul id="social-links">
