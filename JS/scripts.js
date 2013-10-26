@@ -22,7 +22,7 @@
       this.message = encodeURIComponent(this.page_url);
       this.intent_url = "https://plus.google.com/share?url="+this.message;
       $('.js-googleplus').attr({'href':this.intent_url});
-    };
+    }
   }
   Socializer.init();
 })();
