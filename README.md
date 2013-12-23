@@ -18,3 +18,7 @@ vision and message to the world.
 ##Customization
 
 To add your social media accounts beneath the logo, you'll need to open up ./gadgetry/default.hbs and change the '#' to the URL corresponding to your social media account. 
+
+##Purchase
+
+Now available for purchase! Only $15 - https://sellfy.com/p/ZngJ/
