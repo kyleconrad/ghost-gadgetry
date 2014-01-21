@@ -142,6 +142,18 @@ hr {
 	margin-right: auto;
 }
 
+blockquote {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	line-height: 1.25;
+	@include rem(font-size,1.75rem);
+	color: $primary;
+	@include rem(margin-bottom,1.25rem);
+	display: block;
+	border-left: 5px solid $primary;
+	@include rem(padding-left,2rem);
+}
+
 .post-info {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
